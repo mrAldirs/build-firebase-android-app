@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".ui_admin.Dashboard">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/tv_subDosen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar Dosen"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="32dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cd_dosen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                android:layout_margin="8dp"
+                android:layout_below="@+id/tv_subDosen"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/blue_700">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_dosen"
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp"
+                    tools:listitem="@layout/item_ads"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+                android:id="@+id/tv_subMhs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar Mahasiswa"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_below="@+id/cd_dosen"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="32dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cd_mhs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="8dp"
+                android:layout_below="@+id/tv_subMhs"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/blue_700">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_mahasiswa"
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp"
+                    tools:listitem="@layout/item_ads"/>
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+
+</FrameLayout>

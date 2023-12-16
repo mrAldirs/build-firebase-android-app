@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nv_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/nv_datadosen"
+        android:icon="@drawable/ic_dosen_black_24dp"
+        android:title="Data Dosen" />
+
+    <item
+        android:id="@+id/nv_datamhs"
+        android:icon="@drawable/ic_mhs_black_24dp"
+        android:title="Data Mahasiswa" />
+
+    <item
+        android:id="@+id/nv_about"
+        android:icon="@drawable/ic_about_black_24dp"
+        android:title="About" />
+</menu>

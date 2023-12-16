@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "140576813056",
+    "project_id": "silapor-408214",
+    "storage_bucket": "silapor-408214.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140576813056:android:6c95c25b566c467b09a8e5",
+        "android_client_info": {
+          "package_name": "com.example.silapor_v2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSKXfnEs87Fx1rJdtCa5G2mNyeppx76jQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
