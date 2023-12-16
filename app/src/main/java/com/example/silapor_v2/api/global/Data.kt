@@ -6,5 +6,7 @@ class Data {
         val kelas: String = "class"
         val dosen: String = "dosen"
         val mahasiswa: String = "mahasiswa"
+        val matkul: String = "matkul"
+        val activities: String = "activities"
     }
 }

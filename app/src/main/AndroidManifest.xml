@@ -53,6 +53,10 @@
                   android:screenOrientation="portrait"/>
         <activity android:name=".ui_admin.EditDosen"
                   android:screenOrientation="portrait"/>
+        <activity android:name=".ui_mhs.WebView"
+                  android:screenOrientation="fullSensor"/>
+        <activity android:name=".ui_mhs.Show"
+                  android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

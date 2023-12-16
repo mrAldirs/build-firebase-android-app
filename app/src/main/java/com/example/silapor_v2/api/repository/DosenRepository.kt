@@ -12,13 +12,13 @@ class DosenRepository {
     fun getList(callback: (List<DosenModel>?, Exception?) -> Unit) {
         firestore.collection(Data.dosen).get()
             .addOnSuccessListener { querySnapshot ->
-                val kategoriList = mutableListOf<DosenModel>()
+                val dataList = mutableListOf<DosenModel>()
                 for (document in querySnapshot.documents) {
                     val id = document.id
                     val name = document.getString("name") ?: ""
-                    kategoriList.add(DosenModel(id, name, "", ""))
+                    dataList.add(DosenModel(id, name, "", ""))
                 }
-                callback(kategoriList, null)
+                callback(dataList, null)
             }
             .addOnFailureListener { exception ->
                 callback(null, exception)

@@ -53,6 +53,8 @@ class Data_Mhs : Fragment() {
                     binding.inpName.text?.clear()
                     binding.inpNim.text?.clear()
                     binding.inpAlamat.text?.clear()
+                    binding.inpKelas.setSelection(0)
+                    binding.inpDosen.setSelection(0)
                 }
             })
         }
