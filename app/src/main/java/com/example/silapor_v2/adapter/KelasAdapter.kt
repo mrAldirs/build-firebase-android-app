@@ -1,6 +1,7 @@
 package com.example.silapor_v2.adapter
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.silapor_v2.R
 import com.example.silapor_v2.models.KelasModel
+import com.example.silapor_v2.ui_dosen.Activities
 import com.google.android.material.card.MaterialCardView
 
 class KelasAdapter(private var dataList: List<KelasModel>) :
@@ -31,7 +33,9 @@ class KelasAdapter(private var dataList: List<KelasModel>) :
         val data = dataList.get(position)
         holder.name.text = "Forum Kelas ${data.name}"
         holder.cd.setOnClickListener {
-
+            val intent = Intent(holder.itemView.context, Activities::class.java)
+            intent.putExtra("kelas", data.name)
+            holder.itemView.context.startActivity(intent)
         }
     }
 

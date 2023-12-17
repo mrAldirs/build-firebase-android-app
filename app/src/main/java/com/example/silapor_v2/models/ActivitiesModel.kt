@@ -6,6 +6,6 @@ data class ActivitiesModel (
     val matkul: String,
     val materi: String,
     val deskripsi: String,
-    val nilai: Int,
+    val nilai: String,
     val pdf: String,
 )

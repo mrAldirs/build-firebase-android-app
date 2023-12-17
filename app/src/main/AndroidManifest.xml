@@ -16,6 +16,14 @@
         android:theme="@style/Theme.Silapor_v2"
         tools:targetApi="31">
 
+        <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyDmcXgQN8gm5zhAnryw0ntBsORQXXsf260" />
+
         <service
                 android:name=".utils.custom.FirebaseCloudMessaging"
                 android:exported="true">
@@ -24,9 +32,6 @@
             </intent-filter>
         </service>
 
-        <activity
-            android:name=".ui_admin.AdapterDosen"
-            android:exported="false" />
         <activity
             android:name=".DosenActivity"
             android:exported="false" />
@@ -56,6 +61,11 @@
         <activity android:name=".ui_mhs.WebView"
                   android:screenOrientation="fullSensor"/>
         <activity android:name=".ui_mhs.Show"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui_mhs.Maps"
+                  android:screenOrientation="portrait"
+                  android:exported="true"/>
+        <activity android:name=".ui_dosen.Activities"
                   android:screenOrientation="portrait"/>
     </application>
 

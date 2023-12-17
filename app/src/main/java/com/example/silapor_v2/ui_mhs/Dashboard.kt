@@ -44,7 +44,9 @@ class Dashboard : Fragment() {
         binding.btnYoutube.setOnClickListener {
             startActivity(android.content.Intent(context, WebView::class.java))
         }
-
+        binding.btnMaps.setOnClickListener {
+            startActivity(android.content.Intent(context, Maps::class.java))
+        }
 
         return v
     }

@@ -30,6 +30,14 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     tools:listitem="@layout/item_kelas"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/bar_chart"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="86dp"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.core.widget.NestedScrollView>
 

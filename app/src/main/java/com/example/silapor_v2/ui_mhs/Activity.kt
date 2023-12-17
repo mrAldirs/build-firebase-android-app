@@ -70,7 +70,7 @@ class Activity: Fragment() {
                 binding.inpMatkul.selectedItem.toString(),
                 binding.inpMateri.text.toString(),
                 binding.inpDesc.text.toString(),
-                0, ""
+                "0", ""
             )
             activitiesViewModel.create(dataList, uri).observe(requireActivity(), Observer { success ->
                 if (success) {
