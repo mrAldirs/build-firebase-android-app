@@ -43,6 +43,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
+    override fun onStart() {
+        super.onStart()
+        notifikasiMessage()
+    }
+
     override fun onClick(p0: View?) {
         when (p0?.id) {
             R.id.btnLogin -> {
